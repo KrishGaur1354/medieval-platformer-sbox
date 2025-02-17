@@ -1,8 +1,8 @@
 {
-  "Title": "testcase1",
+  "Title": "Medieval Climber Concept",
   "Type": "game",
   "Org": "thatonegame",
-  "Ident": "testcase1",
+  "Ident": "medieval-climber-concept",
   "Schema": 1,
   "IncludeSourceFiles": true,
   "Resources": null,

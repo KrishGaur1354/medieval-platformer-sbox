@@ -10,9 +10,19 @@
         {
           "__type": "Sandbox.SceneInformation",
           "__guid": "ac0ebc8a-12f2-47a1-ba64-2a8a6bfc00fb",
+          "Author": null,
+          "Changes": null,
           "Description": "",
+          "Group": null,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
           "SceneTags": "",
-          "Title": "minimal"
+          "Title": "minimal",
+          "Version": null
         }
       ]
     },
@@ -30,6 +40,12 @@
           "FogMode": "Enabled",
           "FogStrength": 1,
           "LightColor": "0.94419,0.97767,1,1",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
           "Shadows": true,
           "SkyColor": "0.2532,0.32006,0.35349,1"
         }
@@ -45,6 +61,12 @@
         {
           "__type": "Sandbox.SkyBox2D",
           "__guid": "de79e9e0-5c37-4c54-ac67-bfcdb1d5483b",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
           "SkyIndirectLighting": true,
           "SkyMaterial": "materials/skybox/skybox_day_01.vmat",
           "Tint": "1,1,1,1"
@@ -61,6 +83,12 @@
           "FrameInterval": 5,
           "MaxDistance": 512,
           "MultiBounce": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
           "Projection": "Sphere",
           "RenderDynamically": false,
           "Texture": "textures/cubemaps/default2.vtex",
@@ -82,12 +110,21 @@
         {
           "__type": "Sandbox.SkinnedModelRenderer",
           "__guid": "0b6a18bf-fdb8-4661-970e-ef635bfa9baa",
+          "AnimationGraph": null,
           "BodyGroups": 18446744073709551615,
+          "BoneMergeTarget": null,
           "CreateAttachments": false,
           "CreateBoneObjects": false,
+          "MaterialGroup": null,
           "MaterialOverride": "sugmas_textures/stonetilefloor3.vmat",
           "Model": "models/buildings/stone/floor_128_a.vmdl",
           "Morphs": {},
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
           "Parameters": {
             "bools": {},
             "ints": {},
@@ -121,9 +158,101 @@
               "__type": "Sandbox.BoxCollider",
               "__guid": "c78c7473-7e76-45f0-b6c5-5f627c8796fe",
               "Center": "0,0,-5",
+              "Friction": null,
               "IsTrigger": false,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
               "Scale": "100,100,10",
               "Static": false,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "100e40f8-f1e3-4931-9666-27617714b167",
+      "Flags": 0,
+      "Name": "Plane (1)",
+      "Position": "0,0,692.2957",
+      "Scale": "5,5,5",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SkinnedModelRenderer",
+          "__guid": "764ce278-feb5-412d-a52d-5c031c13dea5",
+          "AnimationGraph": null,
+          "BodyGroups": 18446744073709551615,
+          "BoneMergeTarget": null,
+          "CreateAttachments": false,
+          "CreateBoneObjects": false,
+          "MaterialGroup": null,
+          "MaterialOverride": "sugmas_textures/stonetilefloor3.vmat",
+          "Model": "models/buildings/stone/floor_128_a.vmdl",
+          "Morphs": {},
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Parameters": {
+            "bools": {},
+            "ints": {},
+            "floats": {},
+            "vectors": {},
+            "rotations": {}
+          },
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Sequence": {
+            "Name": null
+          },
+          "Tint": "786.0465,786.0465,786.0465,1",
+          "UseAnimGraph": true
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "8cee27d8-d0c5-444c-83f1-3964209204b3",
+          "Flags": 0,
+          "Name": "Body",
+          "Position": "0,0,2.009763",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "a1ecbc5c-680f-4e1d-8c88-5fb2bb7682d2",
+              "Center": "0,0,-5",
+              "Friction": null,
+              "IsTrigger": false,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "Scale": "100,100,10",
+              "Static": false,
+              "Surface": null,
               "SurfaceVelocity": "0,0,0"
             }
           ]
@@ -157,6 +286,12 @@
           "MassCenterOverride": "0,0,0",
           "MassOverride": 0,
           "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
           "OverrideMassCenter": false,
           "RigidbodyFlags": 0,
           "StartAsleep": false
@@ -174,12 +309,21 @@
             {
               "__type": "Sandbox.SkinnedModelRenderer",
               "__guid": "6425ab7a-14f5-478d-b026-56f85befc992",
+              "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
+              "BoneMergeTarget": null,
               "CreateAttachments": false,
               "CreateBoneObjects": false,
+              "MaterialGroup": null,
               "MaterialOverride": "sugmas_textures/stonetilefloor3.vmat",
               "Model": "models/buildings/stone/floor_128_a.vmdl",
               "Morphs": {},
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
               "Parameters": {
                 "bools": {},
                 "ints": {},
@@ -204,9 +348,21 @@
               "__type": "Sandbox.BoxCollider",
               "__guid": "8981f7ec-adee-41b5-ad1e-a4f030e156e3",
               "Center": "0,0,0",
+              "Friction": null,
               "IsTrigger": false,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
               "Scale": "127.6799,124.88,7.120007",
               "Static": false,
+              "Surface": null,
               "SurfaceVelocity": "0,0,0"
             }
           ]
@@ -240,6 +396,12 @@
           "MassCenterOverride": "0,0,0",
           "MassOverride": 0,
           "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
           "OverrideMassCenter": false,
           "RigidbodyFlags": 0,
           "StartAsleep": false
@@ -257,12 +419,21 @@
             {
               "__type": "Sandbox.SkinnedModelRenderer",
               "__guid": "517ea432-5846-4868-97fc-d48af0018e79",
+              "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
+              "BoneMergeTarget": null,
               "CreateAttachments": false,
               "CreateBoneObjects": false,
+              "MaterialGroup": null,
               "MaterialOverride": "sugmas_textures/stonetilefloor3.vmat",
               "Model": "models/buildings/stone/floor_128_a.vmdl",
               "Morphs": {},
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
               "Parameters": {
                 "bools": {},
                 "ints": {},
@@ -287,9 +458,21 @@
               "__type": "Sandbox.BoxCollider",
               "__guid": "f85d92d4-7945-4505-b874-d1a51d382670",
               "Center": "0,0,0",
+              "Friction": null,
               "IsTrigger": false,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
               "Scale": "127.6799,124.88,7.120007",
               "Static": false,
+              "Surface": null,
               "SurfaceVelocity": "0,0,0"
             }
           ]
@@ -300,7 +483,7 @@
       "__guid": "1194195b-f3ea-4695-8caf-47357532ae0b",
       "Flags": 0,
       "Name": "Cube 3",
-      "Position": "99.36579,105.5453,80.71951",
+      "Position": "96,96,96",
       "Rotation": "0.00000001819328,-0.00000000000000008235059,0.3052325,0.952278",
       "Scale": "0.5632889,0.5632889,0.5632889",
       "Enabled": true,
@@ -323,6 +506,12 @@
           "MassCenterOverride": "0,0,0",
           "MassOverride": 0,
           "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
           "OverrideMassCenter": false,
           "RigidbodyFlags": 0,
           "StartAsleep": false
@@ -340,12 +529,21 @@
             {
               "__type": "Sandbox.SkinnedModelRenderer",
               "__guid": "d2806632-271b-49a8-a99e-ed4a8842a5c6",
+              "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
+              "BoneMergeTarget": null,
               "CreateAttachments": false,
               "CreateBoneObjects": false,
+              "MaterialGroup": null,
               "MaterialOverride": "sugmas_textures/stonetilefloor3.vmat",
               "Model": "models/buildings/stone/floor_128_a.vmdl",
               "Morphs": {},
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
               "Parameters": {
                 "bools": {},
                 "ints": {},
@@ -370,9 +568,687 @@
               "__type": "Sandbox.BoxCollider",
               "__guid": "2df922ee-1432-468e-af8f-f289d9b3c6de",
               "Center": "0,0,0",
+              "Friction": null,
               "IsTrigger": false,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
               "Scale": "127.6799,124.88,7.120007",
               "Static": false,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "41af3190-597d-49da-b2e1-dccac8a2f940",
+      "Flags": 0,
+      "Name": "Cube 3 (1)",
+      "Position": "96,96,96",
+      "Rotation": "0.00000001819328,-0.00000000000000008235059,0.3052325,0.952278",
+      "Scale": "0.5632889,0.5632889,0.5632889",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "99d5ca59-dad0-4d5c-ad08-b8d757ed86ba",
+          "__enabled": false,
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": false,
+            "Yaw": false,
+            "Roll": false
+          },
+          "MassCenterOverride": "0,0,0",
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OverrideMassCenter": false,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "1c1325c7-59cf-474f-9295-46e0d1dfb464",
+          "Flags": 0,
+          "Name": "Body",
+          "Position": "-483.6562,189.4124,61.56503",
+          "Rotation": "-0.000000000000003346869,-0.0000000000000002983852,-0.3007058,0.9537169",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "f122e40a-fc93-4e14-8721-1eaa94f080e1",
+              "AnimationGraph": null,
+              "BodyGroups": 18446744073709551615,
+              "BoneMergeTarget": null,
+              "CreateAttachments": false,
+              "CreateBoneObjects": false,
+              "MaterialGroup": null,
+              "MaterialOverride": "sugmas_textures/stonetilefloor3.vmat",
+              "Model": "models/buildings/stone/floor_128_a.vmdl",
+              "Morphs": {},
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Parameters": {
+                "bools": {},
+                "ints": {},
+                "floats": {},
+                "vectors": {},
+                "rotations": {}
+              },
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Sequence": {
+                "Name": null
+              },
+              "Tint": "0.63256,0.58548,0.62942,1",
+              "UseAnimGraph": true
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "8af42a6e-4979-46ae-98a5-2bbf844d6cc3",
+              "Center": "0,0,0",
+              "Friction": null,
+              "IsTrigger": false,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "Scale": "127.6799,124.88,7.120007",
+              "Static": false,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "4080a8bd-5dc6-4b18-bb65-45d64f34e5dc",
+      "Flags": 0,
+      "Name": "Cube 3 (2)",
+      "Position": "96,96,96",
+      "Rotation": "0.00000001819328,-0.00000000000000008235059,0.3052325,0.952278",
+      "Scale": "0.5632889,0.5632889,0.5632889",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "5facfd79-74ef-4639-932c-23c63c59d11f",
+          "__enabled": false,
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": false,
+            "Yaw": false,
+            "Roll": false
+          },
+          "MassCenterOverride": "0,0,0",
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OverrideMassCenter": false,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "e26c1126-1ca3-48d7-bdf2-a255ea23ccea",
+          "Flags": 0,
+          "Name": "Body",
+          "Position": "-614.875,2.012802,120.3242",
+          "Rotation": "-0.000000000000003346869,-0.0000000000000002983852,-0.3007058,0.9537169",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "16a4e2db-45db-4c8f-a31a-ed2c576a09fa",
+              "AnimationGraph": null,
+              "BodyGroups": 18446744073709551615,
+              "BoneMergeTarget": null,
+              "CreateAttachments": false,
+              "CreateBoneObjects": false,
+              "MaterialGroup": null,
+              "MaterialOverride": "sugmas_textures/stonetilefloor3.vmat",
+              "Model": "models/buildings/stone/floor_128_a.vmdl",
+              "Morphs": {},
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Parameters": {
+                "bools": {},
+                "ints": {},
+                "floats": {},
+                "vectors": {},
+                "rotations": {}
+              },
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Sequence": {
+                "Name": null
+              },
+              "Tint": "0.63256,0.58548,0.62942,1",
+              "UseAnimGraph": true
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "5501da27-da25-42f0-93f0-e75d4649f4da",
+              "Center": "0,0,0",
+              "Friction": null,
+              "IsTrigger": false,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "Scale": "127.6799,124.88,7.120007",
+              "Static": false,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "0c7279d9-435a-44b4-b4ca-02b8d20ea012",
+      "Flags": 0,
+      "Name": "Cube 3 (3)",
+      "Position": "96,96,96",
+      "Rotation": "0.00000001819328,-0.00000000000000008235059,0.3052325,0.952278",
+      "Scale": "0.5632889,0.5632889,0.5632889",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "cdbee1d3-a84b-49c2-97bc-9ada765d6743",
+          "__enabled": false,
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": false,
+            "Yaw": false,
+            "Roll": false
+          },
+          "MassCenterOverride": "0,0,0",
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OverrideMassCenter": false,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "3be083c6-059f-4a8f-ae93-a0ff1cdb4ef9",
+          "Flags": 0,
+          "Name": "Body",
+          "Position": "-312.0706,-316.1241,243.2255",
+          "Rotation": "-0.000000000000003346869,-0.0000000000000002983852,-0.3007058,0.9537169",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "14a99720-18ba-4f43-b69a-d3141e9fa7d2",
+              "AnimationGraph": null,
+              "BodyGroups": 18446744073709551615,
+              "BoneMergeTarget": null,
+              "CreateAttachments": false,
+              "CreateBoneObjects": false,
+              "MaterialGroup": null,
+              "MaterialOverride": "sugmas_textures/stonetilefloor3.vmat",
+              "Model": "models/buildings/stone/floor_128_a.vmdl",
+              "Morphs": {},
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Parameters": {
+                "bools": {},
+                "ints": {},
+                "floats": {},
+                "vectors": {},
+                "rotations": {}
+              },
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Sequence": {
+                "Name": null
+              },
+              "Tint": "0.63256,0.58548,0.62942,1",
+              "UseAnimGraph": true
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "b3fe7fad-457f-4b26-9fa3-28b502db42d4",
+              "Center": "0,0,0",
+              "Friction": null,
+              "IsTrigger": false,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "Scale": "127.6799,124.88,7.120007",
+              "Static": false,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "43fd7338-85c8-470d-83af-fe1065cd19ab",
+      "Flags": 0,
+      "Name": "Cube 3 (5)",
+      "Position": "96,96,96",
+      "Rotation": "0.00000001819328,-0.00000000000000008235059,0.3052325,0.952278",
+      "Scale": "0.5632889,0.5632889,0.5632889",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "8034b515-6a5f-462d-a720-d8e57fefe7e3",
+          "__enabled": false,
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": false,
+            "Yaw": false,
+            "Roll": false
+          },
+          "MassCenterOverride": "0,0,0",
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OverrideMassCenter": false,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "c58c1e9d-8cfb-4a30-83df-282e79a58d65",
+          "Flags": 0,
+          "Name": "Body",
+          "Position": "-115.875,-239.3488,328.4254",
+          "Rotation": "-0.000000000000003346869,-0.0000000000000002983852,-0.3007058,0.9537169",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "4b6647ce-3918-43e5-a2cf-b043d5a3be80",
+              "AnimationGraph": null,
+              "BodyGroups": 18446744073709551615,
+              "BoneMergeTarget": null,
+              "CreateAttachments": false,
+              "CreateBoneObjects": false,
+              "MaterialGroup": null,
+              "MaterialOverride": "sugmas_textures/stonetilefloor3.vmat",
+              "Model": "models/buildings/stone/floor_128_a.vmdl",
+              "Morphs": {},
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Parameters": {
+                "bools": {},
+                "ints": {},
+                "floats": {},
+                "vectors": {},
+                "rotations": {}
+              },
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Sequence": {
+                "Name": null
+              },
+              "Tint": "0.63256,0.58548,0.62942,1",
+              "UseAnimGraph": true
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "72753e01-07d7-4317-a3e4-3827c86b47ac",
+              "Center": "0,0,0",
+              "Friction": null,
+              "IsTrigger": false,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "Scale": "127.6799,124.88,7.120007",
+              "Static": false,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "9555a76f-01dd-48d6-8396-c25bfbbeb6a1",
+      "Flags": 0,
+      "Name": "Cube 3 (6)",
+      "Position": "96,96,96",
+      "Rotation": "0.00000001819328,-0.00000000000000008235059,0.3052325,0.952278",
+      "Scale": "0.5632889,0.5632889,0.5632889",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "188a7115-087f-4848-9fd9-d34ba61a1d6c",
+          "__enabled": false,
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": false,
+            "Yaw": false,
+            "Roll": false
+          },
+          "MassCenterOverride": "0,0,0",
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OverrideMassCenter": false,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "0d0d50f7-bca4-4f27-b86b-c0e714d20c80",
+          "Flags": 0,
+          "Name": "Body",
+          "Position": "-8.637449,-98.75637,396.36",
+          "Rotation": "-0.000000000000003346869,-0.0000000000000002983852,-0.3007058,0.9537169",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "425ccdfd-0a8d-4af0-a1e1-2cdb0ce97331",
+              "AnimationGraph": null,
+              "BodyGroups": 18446744073709551615,
+              "BoneMergeTarget": null,
+              "CreateAttachments": false,
+              "CreateBoneObjects": false,
+              "MaterialGroup": null,
+              "MaterialOverride": "sugmas_textures/stonetilefloor3.vmat",
+              "Model": "models/buildings/stone/floor_128_a.vmdl",
+              "Morphs": {},
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Parameters": {
+                "bools": {},
+                "ints": {},
+                "floats": {},
+                "vectors": {},
+                "rotations": {}
+              },
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Sequence": {
+                "Name": null
+              },
+              "Tint": "0.63256,0.58548,0.62942,1",
+              "UseAnimGraph": true
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "a7170e09-1524-4a75-bfdd-1b010dd68668",
+              "Center": "0,0,0",
+              "Friction": null,
+              "IsTrigger": false,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "Scale": "127.6799,124.88,7.120007",
+              "Static": false,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            }
+          ]
+        },
+        {
+          "__guid": "4e378e29-b1ee-45a9-b627-1691610e999b",
+          "Flags": 0,
+          "Name": "Object",
+          "Enabled": true
+        }
+      ]
+    },
+    {
+      "__guid": "aa353a24-4779-4e5e-b475-32283d8a9427",
+      "Flags": 0,
+      "Name": "Cube 3 (4)",
+      "Position": "96,96,96",
+      "Rotation": "0.00000001819328,-0.00000000000000008235059,0.3052325,0.952278",
+      "Scale": "0.5632889,0.5632889,0.5632889",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "0adf770c-4647-4930-8e8a-f9849120ae03",
+          "__enabled": false,
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {
+            "X": false,
+            "Y": false,
+            "Z": false,
+            "Pitch": false,
+            "Yaw": false,
+            "Roll": false
+          },
+          "MassCenterOverride": "0,0,0",
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OverrideMassCenter": false,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "d26eaf61-e9cd-464c-83f3-55c08d62268d",
+          "Flags": 0,
+          "Name": "Body",
+          "Position": "-484.1826,-195.6096,175.4318",
+          "Rotation": "-0.000000000000003346869,-0.0000000000000002983852,-0.3007058,0.9537169",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "5389d5b1-c94a-4bf0-b7cd-2ff11a316c7b",
+              "AnimationGraph": null,
+              "BodyGroups": 18446744073709551615,
+              "BoneMergeTarget": null,
+              "CreateAttachments": false,
+              "CreateBoneObjects": false,
+              "MaterialGroup": null,
+              "MaterialOverride": "sugmas_textures/stonetilefloor3.vmat",
+              "Model": "models/buildings/stone/floor_128_a.vmdl",
+              "Morphs": {},
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Parameters": {
+                "bools": {},
+                "ints": {},
+                "floats": {},
+                "vectors": {},
+                "rotations": {}
+              },
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Sequence": {
+                "Name": null
+              },
+              "Tint": "0.63256,0.58548,0.62942,1",
+              "UseAnimGraph": true
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "8afb5144-9523-4ec6-b317-f8cc9ef65844",
+              "Center": "0,0,0",
+              "Friction": null,
+              "IsTrigger": false,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "Scale": "127.6799,124.88,7.120007",
+              "Static": false,
+              "Surface": null,
               "SurfaceVelocity": "0,0,0"
             }
           ]
@@ -394,6 +1270,12 @@
           "ClearFlags": "All",
           "FieldOfView": 60,
           "IsMainCamera": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
           "Orthographic": false,
           "OrthographicHeight": 1204,
           "Priority": 1,
@@ -438,6 +1320,12 @@
             }
           ],
           "Mode": "Additive",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
           "Strength": 0.5,
           "Threshold": 0.5,
           "ThresholdWidth": 0.5
@@ -453,11 +1341,23 @@
           "MaximumExposure": 2,
           "MinimumExposure": 1,
           "Mode": "Legacy",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
           "Rate": 1
         },
         {
           "__type": "Sandbox.Sharpen",
           "__guid": "0bffee5e-19f2-41c4-88f9-faefbcce6bf4",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
           "Scale": 0.2
         }
       ]
@@ -473,23 +1373,28 @@
         {
           "__type": "Sandbox.PlayerController",
           "__guid": "2d42703f-c7ce-4593-babe-96b60497d8b6",
+          "AccelerationTime": 0,
           "AimStrengthBody": 1,
           "AimStrengthEyes": 1,
           "AimStrengthHead": 1,
+          "AltMoveButton": "run",
           "Body": {
             "_type": "component",
             "component_id": "c393d52c-e2e1-472c-9d03-d860b8911f90",
             "go": "ab987e99-7921-4bd1-b5cd-610ca629d8ce",
             "component_type": "Rigidbody"
           },
+          "BodyCollisionTags": null,
           "BodyHeight": 72,
           "BodyMass": 500,
           "BodyRadius": 16,
+          "BrakePower": 1,
           "CameraOffset": "256,0,12",
           "ColliderObject": {
             "_type": "gameobject",
             "go": "ada46c39-11e1-4e9b-9f8f-896dedbc0cfb"
           },
+          "DeaccelerationTime": 0,
           "DuckedHeight": 36,
           "DuckedSpeed": 70,
           "EnableFootstepSounds": true,
@@ -502,6 +1407,14 @@
           "FootstepVolume": 1,
           "HideBodyInFirstPerson": true,
           "JumpSpeed": 300,
+          "LookSensitivity": 1,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "PitchClamp": 90,
           "ReachLength": 130,
           "Renderer": {
             "_type": "component",
@@ -512,6 +1425,7 @@
           "RotateWithGround": true,
           "RotationAngleLimit": 45,
           "RotationSpeed": 1,
+          "RunByDefault": false,
           "RunSpeed": 320,
           "ShowColliderComponents": false,
           "ShowRigidbodyComponent": false,
@@ -520,7 +1434,9 @@
           "UseAnimatorControls": true,
           "UseButton": "use",
           "UseCameraControls": true,
+          "UseFovFromPreferences": true,
           "UseInputControls": true,
+          "UseLookControls": true,
           "WalkSpeed": 110
         },
         {
@@ -540,6 +1456,12 @@
           "MassCenterOverride": "0,0,36",
           "MassOverride": 500,
           "MotionEnabled": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
           "OverrideMassCenter": true,
           "RigidbodyFlags": "DisableCollisionSounds",
           "StartAsleep": false
@@ -548,6 +1470,12 @@
           "__type": "Sandbox.Movement.MoveModeWalk",
           "__guid": "0718bcda-601a-493b-879c-58042c75656f",
           "GroundAngle": 45,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
           "Priority": 0,
           "StepDownHeight": 18,
           "StepUpHeight": 18
@@ -555,6 +1483,12 @@
         {
           "__type": "Sandbox.Movement.MoveModeSwim",
           "__guid": "df533bec-1ab9-4db4-8d45-2d41dd292c04",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
           "Priority": 10,
           "SwimLevel": 0.7
         },
@@ -562,7 +1496,14 @@
           "__type": "Sandbox.Movement.MoveModeLadder",
           "__guid": "c748c8b0-e68a-4058-832c-89a5a97d82cb",
           "ClimbableTags": "ladder",
-          "Priority": 5
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Priority": 5,
+          "Speed": 1
         },
         {
           "__type": "SnotPlayerComponent",
@@ -579,6 +1520,12 @@
             "go": "d4d5e7eb-ff2a-4622-b34d-44504ff01f9c",
             "component_type": "SkinnedModelRenderer"
           },
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
           "UnitComponent": {
             "_type": "component",
             "component_id": "891348bf-5546-43fb-a81e-20a7bd1bdab2",
@@ -597,6 +1544,13 @@
             "go": "d4d5e7eb-ff2a-4622-b34d-44504ff01f9c",
             "component_type": "SkinnedModelRenderer"
           },
+          "Name": null,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
           "Team": "Player"
         }
       ],
@@ -605,16 +1559,20 @@
           "__guid": "d4d5e7eb-ff2a-4622-b34d-44504ff01f9c",
           "Flags": 0,
           "Name": "Body",
-          "Position": "104.0198,103.1237,47.16882",
+          "Position": "58.90467,91.03514,44.42105",
           "Rotation": "0,0,-0.9914448,0.1305264",
           "Enabled": true,
           "Components": [
             {
               "__type": "Sandbox.SkinnedModelRenderer",
               "__guid": "a2f083da-9cf4-46d9-ba04-78ab9d06820a",
+              "AnimationGraph": null,
               "BodyGroups": 341,
+              "BoneMergeTarget": null,
               "CreateAttachments": false,
               "CreateBoneObjects": false,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
               "Model": "models/citizen/citizen.vmdl",
               "Morphs": {
                 "browlowererL": 0,
@@ -622,6 +1580,12 @@
                 "cheekinflateL": 0,
                 "cheekinflateR": 0
               },
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
               "Parameters": {
                 "bools": {},
                 "ints": {},
@@ -656,9 +1620,20 @@
               "End": "0,0,45.05097",
               "Friction": 0,
               "IsTrigger": false,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
               "Radius": 11.313708,
               "Start": "0,0,60.68629",
               "Static": false,
+              "Surface": null,
               "SurfaceVelocity": "0,0,0"
             },
             {
@@ -667,8 +1642,19 @@
               "Center": "0,0,18",
               "Friction": 0,
               "IsTrigger": false,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
               "Scale": "16,16,36",
               "Static": false,
+              "Surface": null,
               "SurfaceVelocity": "0,0,0"
             }
           ]
@@ -687,13 +1673,25 @@
           "__guid": "357992f6-c0da-4287-83f4-2893463c0b3d",
           "BoxSize": "50,50,50",
           "Center": "0.9600007,0,0",
+          "Friction": null,
           "Height": 61.12003,
           "IsTrigger": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
           "Points": [],
           "Radius": 32.199978,
           "Radius2": 0,
           "Slices": 16,
           "Static": false,
+          "Surface": null,
           "SurfaceVelocity": "0,0,0",
           "Type": "Cylinder"
         },
@@ -708,6 +1706,13 @@
             "go": "46e720f4-236a-4b0c-8f1f-fba16a243bae",
             "component_type": "SkinnedModelRenderer"
           },
+          "Name": null,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
           "Team": "Player"
         }
       ],
@@ -721,11 +1726,21 @@
             {
               "__type": "Sandbox.SkinnedModelRenderer",
               "__guid": "4ad1cafe-c881-40d2-adf6-2eae53bcbf4f",
+              "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
+              "BoneMergeTarget": null,
               "CreateAttachments": false,
               "CreateBoneObjects": false,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
               "Model": "models/snot/snot.vmdl",
               "Morphs": {},
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
               "Parameters": {
                 "bools": {
                   "dead": false,
@@ -771,7 +1786,15 @@
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
           "Model": "models/dev/plane.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
           "RenderOptions": {
             "GameLayer": true,
             "OverlayLayer": false,
@@ -785,9 +1808,21 @@
           "__type": "Sandbox.BoxCollider",
           "__guid": "50866dab-f3b7-47c4-9d45-e2b0901dfa3d",
           "Center": "0,0,0",
+          "Friction": null,
           "IsTrigger": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
           "Scale": "96.88001,102.48,30.32",
           "Static": false,
+          "Surface": null,
           "SurfaceVelocity": "0,0,0"
         }
       ],
@@ -804,11 +1839,128 @@
             {
               "__type": "Sandbox.SkinnedModelRenderer",
               "__guid": "2192a861-0687-4289-a808-2231a685e7f3",
+              "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
+              "BoneMergeTarget": null,
               "CreateAttachments": false,
               "CreateBoneObjects": false,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
               "Model": "models/buildings/stone/wall_128_a.vmdl",
               "Morphs": {},
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Parameters": {
+                "bools": {},
+                "ints": {},
+                "floats": {},
+                "vectors": {},
+                "rotations": {}
+              },
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Sequence": {
+                "Name": null
+              },
+              "Tint": "1,1,1,1",
+              "UseAnimGraph": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "3e81797b-0ab4-4944-943e-b6aecbe4f646",
+      "Flags": 0,
+      "Name": "Wall1 (1)",
+      "Position": "0.00006103516,-248.8202,543.8814",
+      "Rotation": "-0.5000001,0.5000001,-0.4999998,-0.4999998",
+      "Scale": "3.588893,4.976542,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "f23f1cbc-d8a5-4dff-8976-b869f2c1dfb7",
+          "__enabled": false,
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/plane.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "d27da63c-3ce9-459c-a0f6-1305ad12ee24",
+          "Center": "0,0,0",
+          "Friction": null,
+          "IsTrigger": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "Scale": "96.88001,102.48,30.32",
+          "Static": false,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "fcb50fbe-9a05-42f3-91ed-2ed677054578",
+          "Flags": 0,
+          "Name": "Body",
+          "Position": "49.549,-0.000006132286,-0.0001983643",
+          "Rotation": "-0.5,-0.5,0.5,0.5000001",
+          "Scale": "1.07,1,2.839065",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "7d0a3494-fb3a-4cff-ba36-74c21bd0eeef",
+              "AnimationGraph": null,
+              "BodyGroups": 18446744073709551615,
+              "BoneMergeTarget": null,
+              "CreateAttachments": false,
+              "CreateBoneObjects": false,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/buildings/stone/wall_128_a.vmdl",
+              "Morphs": {},
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
               "Parameters": {
                 "bools": {},
                 "ints": {},
@@ -848,7 +2000,15 @@
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
           "Model": "models/dev/plane.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
           "RenderOptions": {
             "GameLayer": true,
             "OverlayLayer": false,
@@ -862,9 +2022,21 @@
           "__type": "Sandbox.BoxCollider",
           "__guid": "f28d87cd-8010-45f5-9e5d-b5829e16e965",
           "Center": "0,0,0",
+          "Friction": null,
           "IsTrigger": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
           "Scale": "96.88001,102.48,30.32",
           "Static": false,
+          "Surface": null,
           "SurfaceVelocity": "0,0,0"
         }
       ],
@@ -881,11 +2053,128 @@
             {
               "__type": "Sandbox.SkinnedModelRenderer",
               "__guid": "715f1103-9f32-46ca-bf07-818e0dfd0464",
+              "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
+              "BoneMergeTarget": null,
               "CreateAttachments": false,
               "CreateBoneObjects": false,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
               "Model": "models/buildings/stone/wall_128_a.vmdl",
               "Morphs": {},
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Parameters": {
+                "bools": {},
+                "ints": {},
+                "floats": {},
+                "vectors": {},
+                "rotations": {}
+              },
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Sequence": {
+                "Name": null
+              },
+              "Tint": "1,1,1,1",
+              "UseAnimGraph": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "f08214ad-207a-4d88-8f2d-a247f11d554f",
+      "Flags": 0,
+      "Name": "Wall3 (1)",
+      "Position": "-1.764,244.6805,540.106",
+      "Rotation": "-0.5000001,-0.4999999,-0.5,0.4999998",
+      "Scale": "3.588893,4.976542,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "9fbc727d-1187-4288-aa1b-8b9f325f5e25",
+          "__enabled": false,
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/plane.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "39d2c111-08ae-4ab9-8a22-9387e83392c6",
+          "Center": "0,0,0",
+          "Friction": null,
+          "IsTrigger": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "Scale": "96.88001,102.48,30.32",
+          "Static": false,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "b30df5e9-bdb4-428d-b8d4-7e9a2c9e1760",
+          "Flags": 0,
+          "Name": "Body",
+          "Position": "49.549,0,0",
+          "Rotation": "-0.5000001,-0.5000001,0.5,0.5000001",
+          "Scale": "1.07,1,2.824157",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "37afcc21-3289-4f73-a816-6ce18a2908db",
+              "AnimationGraph": null,
+              "BodyGroups": 18446744073709551615,
+              "BoneMergeTarget": null,
+              "CreateAttachments": false,
+              "CreateBoneObjects": false,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/buildings/stone/wall_128_a.vmdl",
+              "Morphs": {},
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
               "Parameters": {
                 "bools": {},
                 "ints": {},
@@ -925,7 +2214,15 @@
           "__enabled": false,
           "BodyGroups": 18446744073709551615,
           "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
           "Model": "models/dev/plane.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
           "RenderOptions": {
             "GameLayer": true,
             "OverlayLayer": false,
@@ -939,9 +2236,21 @@
           "__type": "Sandbox.BoxCollider",
           "__guid": "0e805e54-5a3d-4576-8de2-7c73de622b61",
           "Center": "0,0,0",
+          "Friction": null,
           "IsTrigger": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
           "Scale": "96.88001,102.48,30.32",
           "Static": false,
+          "Surface": null,
           "SurfaceVelocity": "0,0,0"
         }
       ],
@@ -958,11 +2267,128 @@
             {
               "__type": "Sandbox.SkinnedModelRenderer",
               "__guid": "0967da56-f5f8-435b-a2ca-1499c02b861c",
+              "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
+              "BoneMergeTarget": null,
               "CreateAttachments": false,
               "CreateBoneObjects": false,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
               "Model": "models/buildings/stone/wall_128_a.vmdl",
               "Morphs": {},
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Parameters": {
+                "bools": {},
+                "ints": {},
+                "floats": {},
+                "vectors": {},
+                "rotations": {}
+              },
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Sequence": {
+                "Name": null
+              },
+              "Tint": "1,1,1,1",
+              "UseAnimGraph": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "0f31cce0-fe93-4c00-82e0-1e2deb2707d4",
+      "Flags": 0,
+      "Name": "Wall2 (1)",
+      "Position": "-250.1786,-3.971061,540.6266",
+      "Rotation": "-0.0000001192093,0.7071069,-0.00000002980229,-0.7071067",
+      "Scale": "3.588893,4.976542,1",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "6cfd84a7-f05b-4a9b-9dc4-ef4154517821",
+          "__enabled": false,
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": null,
+          "Model": "models/dev/plane.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "3c02f2d7-53d7-4710-a5e2-283e5e8e4e1a",
+          "Center": "0,0,0",
+          "Friction": null,
+          "IsTrigger": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "Scale": "96.88001,102.48,30.32",
+          "Static": false,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "7f58fe13-1dfa-4f56-be34-9255f87a2e11",
+          "Flags": 0,
+          "Name": "Body",
+          "Position": "49.549,0,0",
+          "Rotation": "-0.4999999,-0.5000002,0.4999999,0.5000002",
+          "Scale": "1.07,1,2.83538",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "bb5cbac1-000c-444c-87d5-fb3f72c0cb1e",
+              "AnimationGraph": null,
+              "BodyGroups": 18446744073709551615,
+              "BoneMergeTarget": null,
+              "CreateAttachments": false,
+              "CreateBoneObjects": false,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/buildings/stone/wall_128_a.vmdl",
+              "Morphs": {},
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
               "Parameters": {
                 "bools": {},
                 "ints": {},
@@ -1000,9 +2426,21 @@
           "__type": "Sandbox.BoxCollider",
           "__guid": "2b4642c1-9f9e-431b-9055-df497207e802",
           "Center": "0,0,0",
+          "Friction": null,
           "IsTrigger": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
           "Scale": "96.88001,102.48,30.32",
           "Static": false,
+          "Surface": null,
           "SurfaceVelocity": "0,0,0"
         }
       ],
@@ -1019,11 +2457,21 @@
             {
               "__type": "Sandbox.SkinnedModelRenderer",
               "__guid": "f258328f-9194-4684-bb27-56406fa0b10d",
+              "AnimationGraph": null,
               "BodyGroups": 18446744073709551615,
+              "BoneMergeTarget": null,
               "CreateAttachments": false,
               "CreateBoneObjects": false,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
               "Model": "models/buildings/stone/wall_128_a.vmdl",
               "Morphs": {},
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
               "Parameters": {
                 "bools": {},
                 "ints": {},
@@ -1049,37 +2497,295 @@
       ]
     },
     {
-      "__guid": "704ae42b-8400-4dcc-a11f-d4f9913bcef7",
+      "__guid": "dcce7e98-9765-4e28-9c78-e2be2b6244c9",
       "Flags": 0,
-      "Name": "Water",
-      "Position": "-171.4841,71.03269,47.61264",
-      "Tags": "water",
+      "Name": "Wall4 (1)",
+      "Position": "252.0132,0.1535487,538.7027",
+      "Rotation": "-0.7071069,0.0000001078765,-0.7071067,-0.00000001846946",
+      "Scale": "3.588893,4.976542,1",
       "Enabled": true,
       "Components": [
         {
-          "__type": "Sandbox.ModelRenderer",
-          "__guid": "2372dc72-1a6d-4110-aa5e-e9acb88cd54b",
-          "BodyGroups": 18446744073709551615,
-          "CreateAttachments": false,
-          "MaterialOverride": "materials/tool_water.vmat",
-          "Model": "models/dev/box.vmdl",
-          "RenderOptions": {
-            "GameLayer": true,
-            "OverlayLayer": false,
-            "BloomLayer": false,
-            "AfterUILayer": false
-          },
-          "RenderType": "On",
-          "Tint": "0,386.9768,967.4418,0.58"
-        },
-        {
           "__type": "Sandbox.BoxCollider",
-          "__guid": "4b935353-5c02-46ca-be80-198f6b68d00a",
+          "__guid": "96563c1c-2adf-43cc-8e07-88a752c8efc7",
           "Center": "0,0,0",
-          "IsTrigger": true,
-          "Scale": "50,50,50",
+          "Friction": null,
+          "IsTrigger": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "Scale": "96.88001,102.48,30.32",
           "Static": false,
+          "Surface": null,
           "SurfaceVelocity": "0,0,0"
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "f409c406-689e-4468-87bc-c5b87d91fb64",
+          "Flags": 0,
+          "Name": "Body",
+          "Position": "50.50665,-0.000001712728,0.0001144409",
+          "Rotation": "-0.5,-0.5,0.4999999,0.5000001",
+          "Scale": "1.070369,1,2.833019",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "f690cebc-3cce-451d-b0ca-380f7b004054",
+              "AnimationGraph": null,
+              "BodyGroups": 18446744073709551615,
+              "BoneMergeTarget": null,
+              "CreateAttachments": false,
+              "CreateBoneObjects": false,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/buildings/stone/wall_128_a.vmdl",
+              "Morphs": {},
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Parameters": {
+                "bools": {},
+                "ints": {},
+                "floats": {},
+                "vectors": {},
+                "rotations": {}
+              },
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Sequence": {
+                "Name": null
+              },
+              "Tint": "1,1,1,1",
+              "UseAnimGraph": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "41622a36-eec3-46d9-925f-19325eedb921",
+      "Flags": 0,
+      "Name": "Box",
+      "Position": "2.234046,168.7733,355.8305",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.MeshComponent",
+          "__guid": "f03de69a-2bd2-474d-bb27-1966cb9b257e",
+          "Collision": "Mesh",
+          "Color": "1,1,1,1",
+          "Friction": null,
+          "HideInGame": true,
+          "IsTrigger": false,
+          "Mesh": {
+            "Topology": "H4sIAAAAAAAACl2QCQ7CMAwEp4Qj3NBy/f\u002BlaMRGsohUVbFn1\u002Bt04ANs\u002BZ0VsM69AwfgBFyAKZ9MPXdgk3qLnsI\u002BUm/h/me9i2ZXfFvYOazafTJN0XRgKZmPyWtfXvYVL73PZRd52WdYPa7xtC8veys7u6t17/7t6Tn0ZtFjvIXZR895zjKjPWf4NiOrGt\u002BivpXZ3XnozaOndVn9vvVkkTjEAQAA",
+            "Positions": [
+              "-242.0934,-2.599116,2.643874",
+              "242.0934,-2.599116,2.643874",
+              "242.0934,2.599116,2.643874",
+              "-242.0934,2.599116,2.643874",
+              "-242.0934,2.599116,-2.643874",
+              "242.0934,2.599116,-2.643874",
+              "242.0934,-2.599116,-2.643874",
+              "-242.0934,-2.599116,-2.643874"
+            ],
+            "TextureCoord": [
+              "1.412401,0.7654546",
+              "-1.412401,-0.5",
+              "1.412401,-0.7654546",
+              "-0.7654546,-0.5",
+              "-1.412401,-0.7654546",
+              "-1.412401,-0.5",
+              "-1.412401,0.7654546",
+              "-0.7654546,-0.5",
+              "1.412401,-0.7654546",
+              "1.412401,0.5",
+              "1.412401,0.7654546",
+              "0.7654546,0.5",
+              "-1.412401,0.7654546",
+              "1.412401,0.5",
+              "-1.412401,-0.7654546",
+              "0.7654546,0.5",
+              "0.7654546,-0.5",
+              "-1.412401,0.5",
+              "-0.7654546,0.5",
+              "1.412401,-0.5",
+              "-0.7654546,0.5",
+              "1.412401,-0.5",
+              "0.7654546,-0.5",
+              "-1.412401,0.5"
+            ],
+            "TextureUAxis": [
+              "1,0,0",
+              "1,0,-0",
+              "0,-1,0",
+              "0,1,0",
+              "-1,0,0",
+              "1,-0,0"
+            ],
+            "TextureVAxis": [
+              "0,-1,0",
+              "0,-1,0",
+              "0,0,-1",
+              "-0,0,-1",
+              "0,0,-1",
+              "-0,0,-1"
+            ],
+            "TextureScale": [
+              "0.3347765,0.006631886",
+              "0.3347765,0.006631886",
+              "0.006631886,0.01032758",
+              "0.006631886,0.01032758",
+              "0.3347765,0.01032758",
+              "0.3347765,0.01032758"
+            ],
+            "TextureOffset": [
+              "505.3268,360.7623",
+              "505.3268,360.763",
+              "360.763,150.4062",
+              "151.237,150.4062",
+              "6.673218,150.4023",
+              "505.3268,150.4023"
+            ],
+            "MaterialIndex": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "EdgeFlags": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "Materials": [
+              "materials/dev/reflectivity_30.vmat"
+            ]
+          },
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "SmoothingAngle": 40,
+          "Static": true,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "d998c283-9e0c-4d30-9639-5965ed821f9e",
+          "Flags": 0,
+          "Name": "body",
+          "Scale": "3.56,1,1",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SkinnedModelRenderer",
+              "__guid": "6c13d86d-3dde-4792-b4cd-97f050957642",
+              "AnimationGraph": null,
+              "BodyGroups": 18446744073709551615,
+              "BoneMergeTarget": null,
+              "CreateAttachments": false,
+              "CreateBoneObjects": false,
+              "MaterialGroup": null,
+              "MaterialOverride": null,
+              "Model": "models/buildings/stone/floor_128_a.vmdl",
+              "Morphs": {},
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "Parameters": {
+                "bools": {},
+                "ints": {},
+                "floats": {},
+                "vectors": {},
+                "rotations": {}
+              },
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "RenderType": "On",
+              "Sequence": {
+                "Name": null
+              },
+              "Tint": "1,1,1,1",
+              "UseAnimGraph": true
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "f9ee22a2-2a9d-4aa4-b0fe-f2d81cb1f9d0",
+              "Center": "0,0,0",
+              "Friction": null,
+              "IsTrigger": false,
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "OnObjectTriggerEnter": null,
+              "OnObjectTriggerExit": null,
+              "OnTriggerEnter": null,
+              "OnTriggerExit": null,
+              "Scale": "135.2002,118.72,8.560036",
+              "Static": true,
+              "Surface": null,
+              "SurfaceVelocity": "0,0,0"
+            }
+          ]
         }
       ]
     }
@@ -1116,7 +2822,6 @@
     "apetavern.floor_stone#78602",
     "apetavern.wall_stone#78609",
     "fish.snot#46280",
-    "loli.tool_water#19068",
     "sugmatextures.stonetilefloor3#35103"
   ],
   "__version": 2
